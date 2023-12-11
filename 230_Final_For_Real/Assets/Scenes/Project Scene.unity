@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.11638208, g: 0.11867632, b: 0.10031612, a: 1}
+  m_IndirectSpecularColor: {r: 0.04811532, g: 0.03926035, b: 0.023086492, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1335,7 +1335,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 423749524}
-  m_Layer: 0
+  - component: {fileID: 423749525}
+  m_Layer: 8
   m_Name: PostProcessing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1356,6 +1357,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &423749525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423749523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: c68d63324541fd24eb26360ff644de97, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!1 &431573905
 GameObject:
   m_ObjectHideFlags: 0
@@ -7328,13 +7346,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673576559}
-  m_LocalRotation: {x: 0.3412694, y: -0.42324665, z: -0.5417435, w: 0.64102376}
+  m_LocalRotation: {x: 0.29925182, y: -0.5158228, z: 0.31151748, w: -0.73981905}
   m_LocalPosition: {x: 173, y: 52.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -1.207, y: -65.865, z: -79.622}
+  m_LocalEulerAnglesHint: {x: -6.973, y: 73.088, z: 309.16}
 --- !u!1 &1675368528
 GameObject:
   m_ObjectHideFlags: 0
@@ -8004,6 +8022,18 @@ PrefabInstance:
     - target: {fileID: 4229361013011238, guid: dabb3ed4badbc17418dc6b73d4b7b6a8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20668785749879880, guid: dabb3ed4badbc17418dc6b73d4b7b6a8, type: 3}
+      propertyPath: m_HDR
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20668785749879880, guid: dabb3ed4badbc17418dc6b73d4b7b6a8, type: 3}
+      propertyPath: m_AllowDynamicResolution
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9097728213124850262, guid: dabb3ed4badbc17418dc6b73d4b7b6a8, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dabb3ed4badbc17418dc6b73d4b7b6a8, type: 3}
